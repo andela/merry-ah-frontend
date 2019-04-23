@@ -10,6 +10,7 @@ import PrivateRoute from './PrivateRoute.jsx';
 import GuestRoute from './GuestRoute.jsx';
 import SignUp from './authentication/SignUp.jsx';
 import VerifySocialAuthToken from './VerifySocialAuthToken.jsx';
+import BookmarkArt from './BookmarkArt.jsx';
 import CreateArt from './CreateArt.jsx';
 
 const Routes = () => (
@@ -20,6 +21,7 @@ const Routes = () => (
         <GuestRoute exact path="/login" component={Login}></GuestRoute>
         <GuestRoute exact path="/register" component={SignUp}> </GuestRoute>
         <PrivateRoute path="/profile" component={Profile}></PrivateRoute>
+        <PrivateRoute path="/bookmark" component={BookmarkArt}></PrivateRoute>
         <PrivateRoute path="/create-art" component={CreateArt}/>
         <Route component={NotFound}></Route>
     </Switch>

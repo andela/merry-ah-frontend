@@ -18,6 +18,15 @@ const signUpProps = {
   },
   signUp: () => null
 };
+const bookmarkProps = {
+  bookmark: {
+    isFetching: true,
+    bookmarks: {
+      data: ['addsadd', 'test']
+    }
+  },
+  getBookmarkArt: jest.fn(),
+}
 
 const createArtProps = {
   artProps:{
@@ -33,4 +42,4 @@ const createArtProps = {
   getCategories: () => null
 };
 
-export {loginProps, signUpProps,createArtProps};
+export { signUpProps, createArtProps, loginProps, bookmarkProps };
